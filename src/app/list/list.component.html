@@ -1,0 +1,18 @@
+<div class="conteneur0">
+    <h1>TO DO</h1>
+
+    <div class="conteneur1">
+    <div class="conteneur">
+        <label for="task">What is your next task?</label><p class="error">{{this.error}}</p>
+        <input type="text" name="task" id="task" [(ngModel)]="inputTask" #reference>
+    </div>
+    <button class="submit" type="submit" (click)="onAdd()" (click)="reference.value=''">Add to list</button>
+
+    <div class="conteneur2" *ngFor="let i of taskList">
+        <input id="task1" type="checkbox">
+        <label for="task1">{{i.todo}}</label>
+        <button type="button" class="deleteButton" (click)="onDelete(i)">🗑️</button>
+    </div>
+    </div>
+    
+</div>

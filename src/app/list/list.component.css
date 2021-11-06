@@ -1,0 +1,66 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, .conteneur{
+    padding-top: 45px;
+    text-align: center;
+}
+
+.conteneur{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.conteneur input{
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.submit{
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    background-color: darkslategrey;
+    color: floralwhite;
+    border: none;
+}
+
+.conteneur2{
+    padding-top: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.conteneur2 label{
+    font-family: 'Sacramento', cursive;
+    font-size: 35px;
+}
+
+.conteneur0{
+    background-size: 100%;
+    min-height: 100vh;
+    background-image: url('https://images.pexels.com/photos/574283/pexels-photo-574283.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    background-repeat: round;
+    margin-top: -20px;
+}
+
+.deleteButton{
+    margin-left: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.error{
+    color: red;
+    font-weight: bold;
+}
+
+input[type="checkbox"]:checked+label {
+    text-decoration: line-through;
+}
